@@ -32,10 +32,9 @@ chatForm.addEventListener("submit", (e) => {
 
   //   get message text
   const message = e.target.elements.msg.value;
+  message = message.trim();
 
-  msg = msg.trim();
-
-  if (!msg) {
+  if (!message) {
     return false;
   }
 
